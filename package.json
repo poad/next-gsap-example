@@ -5,17 +5,27 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "format-check": "rome format src",
+    "format": "rome format --write src",
+    "check": "rome check src",
+    "check-fix": "rome check --apply-suggested src",
+    "lint": "yarn format-check && yarn check",
+    "lint-fix": "yarn format && yarn check-fix"
   },
   "dependencies": {
-    "@next/font": "13.1.2",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.26",
-    "@types/react-dom": "18.0.10",
-    "next": "13.1.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "4.9.4"
+    "@next/font": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "gsap": "*",
+    "next": "*",
+    "react": "*",
+    "react-dom": "*",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "rome": "*"
   }
 }
