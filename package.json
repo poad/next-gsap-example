@@ -5,27 +5,25 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "start": "next start",
-    "format-check": "rome format src",
-    "format": "rome format --write src",
-    "check": "rome check src",
-    "check-fix": "rome check --apply-suggested src",
-    "lint": "yarn format-check && yarn check",
-    "lint-fix": "yarn format && yarn check-fix"
+    "style:check": "biome format src",
+    "style:fix": "biome format --write src",
+    "check": "biome check src",
+    "check:fix": "biome check --apply-unsafe src",
+    "lint": "pnpm --parallel run /.*:check$/",
+    "lint-fix": "pnpm run /^.*:fix$/"
   },
   "dependencies": {
-    "@next/font": "*",
-    "@types/node": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "gsap": "*",
-    "next": "*",
-    "react": "*",
-    "react-dom": "*",
-    "typescript": "*"
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "gsap": "^3.12.2",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "rome": "*"
+    "@biomejs/biome": "^1.3.1"
   }
 }
