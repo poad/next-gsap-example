@@ -9,7 +9,7 @@
     "style:check": "biome format src",
     "style:fix": "biome format --write src",
     "check": "biome check src",
-    "check:fix": "biome check --apply-unsafe src",
+    "check:fix": "biome check --write --unsafe src",
     "lint": "pnpm --parallel run /.*:check$/",
     "lint-fix": "pnpm run /^.*:fix$/"
   },
