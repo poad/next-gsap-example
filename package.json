@@ -10,10 +10,10 @@
     "lint-fix": "eslint -c eslint.config.mjs --fix './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "@types/node": "^22.10.6",
+    "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
-    "gsap": "^3.12.5",
+    "gsap": "^3.12.7",
     "next": "^15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
