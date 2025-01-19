@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint -c eslint.config.mjs './src/**/*.{ts,tsx}'",
-    "lint-fix": "eslint -c eslint.config.mjs --fix './src/**/*.{ts,tsx}'"
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint-fix": "eslint --fix './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "@types/node": "^22.10.7",
@@ -19,6 +19,9 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@next/eslint-plugin-next": "^15.1.5",
     "@stylistic/eslint-plugin": "^2.13.0",
     "@stylistic/eslint-plugin-js": "^2.13.0",
     "@stylistic/eslint-plugin-jsx": "^2.13.0",
