@@ -10,7 +10,7 @@
     "lint-fix": "eslint --fix './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "@types/node": "^22.13.1",
+    "@types/node": "^22.13.4",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "gsap": "^3.12.7",
@@ -37,7 +37,7 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "pnpm": "^10.3.0",
+    "pnpm": "^10.4.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.0"
   },
